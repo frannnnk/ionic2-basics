@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
+import { UserPage } from './user/user';
 
 /*
   Generated class for the Users page.
@@ -17,6 +18,10 @@ export class UsersPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad UsersPage');
+  }
+
+  loadUser(name: string) {
+  	this.navCtrl.push(UserPage, {userName: name});
   }
 
 }
