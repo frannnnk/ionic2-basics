@@ -8,5 +8,9 @@
 
 <ion-content padding>
   The world is your oyster.
-  <button ion-button (click)="goToUsers()">User 'Frank'</button>
+  <button ion-button (click)="goToUsers()">Go To USer</button>
+  <button ion-button [navPush]="usersPage">Another Way to Go</button>
+
+  <button ion-button (click)="goToShop()">Go to Shop</button>
+
 </ion-content>
